@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-
+from like import like
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'like/',like),
 ]
